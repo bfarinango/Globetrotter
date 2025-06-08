@@ -1,0 +1,248 @@
+body{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#banner{
+    position: relative;
+}
+
+#header-image{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+}
+
+/*nav bar*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#495034;
+}
+nav ul li{
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 20px;
+    display: block;
+}
+
+/*nav bar hover*/
+
+#intro-paragraph{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+#intro-paragraph h2{
+    font-size: 36px;
+    color: #2d4f58;
+    margin-bottom: 20px;
+}
+
+#intro-paragraph div{
+    flex: 1 1 30%;
+    min-width: 0;
+    text-align: left;
+}
+
+#intro-paragraph iframe{
+    padding: 20px 0;
+    max-width: 100%;
+}
+
+#reykjavik-image{
+    flex: 1 1 60%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#food-guide, #photo-gallery, #top-attractions{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#food-guide h2, #photo-gallery h2, #top-attractions h2{
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d4f58
+}
+
+.restaurant-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.restaurant {
+    flex: 1;
+    max-width: 450px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.restaurant:hover {
+    transform: scale(1.05);
+}
+
+.restaurant h3 {
+    color: #495034;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+
+.restaurant img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: block;
+}
+
+.restaurant p {
+    text-align: left;
+    line-height: 1.5;
+    margin: 10px 0;
+    color: black;
+}
+
+.restaurant a {
+    display: inline-block;
+    background-color: #495034;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Photo Gallery Styles */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.picture {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.picture:hover {
+    transform: scale(1.05);
+}
+
+.picture img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.picture figcaption {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #495034;
+}
+
+/* Top Attractions Styles */
+.attraction-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.attraction {
+    flex: 1;
+    max-width: 500px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.attraction:hover {
+    transform: scale(1.05);
+}
+
+.attraction img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.attraction h3 {
+    color: #495034;
+    margin-bottom: 15px;
+}
+
+.attraction p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #intro-paragraph {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #intro-paragraph div {
+        flex: none;
+        width: 100%;
+    }
+    
+    #reykjavik-image {
+        flex: none;
+        width: 100%;
+    }
+    
+    #intro-paragraph iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
