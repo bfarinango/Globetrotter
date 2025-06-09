@@ -82,7 +82,12 @@ Deployed Application (optional): [[Globetrotter Deployed Site] (https://bfarinan
   - [x] Experiment with at least one CSS property not covered in the lessons or labs to customize your page further.
 
 ### Walkthrough Video
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/f67b711c2a874bcaa9bef591b153f744?sid=7ccaecca-f4d6-45d5-8fa7-3464a5936ea0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<div>
+    <a href="https://www.loom.com/share/f67b711c2a874bcaa9bef591b153f744">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f67b711c2a874bcaa9bef591b153f744-9187512a1b682a35-full-play.gif">
+    </a>
+  </div>
 
 ### Reflection
 
